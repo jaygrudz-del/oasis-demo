@@ -166,8 +166,8 @@ function trend(values, higherIsBetter, metric) {
   }
 
   return adjusted > 0
-    ? { label: `Positive Movement (${displayDelta})`, symbol: "↗", direction: "up", delta: adjusted }
-    : { label: `Pressure Movement (${displayDelta})`, symbol: "↘", direction: "down", delta: adjusted };
+    ? { label: `Positive Movement (${displayDelta})`, symbol: "↑", direction: "up", delta: adjusted }
+    : { label: `Pressure Movement (${displayDelta})`, symbol: "↓", direction: "down", delta: adjusted };
 }
 
 function quartileBoundaries(values) {
